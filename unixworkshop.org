@@ -1,0 +1,147 @@
+* CS CREW UNIX Workshop
+Resources from University of Surrey used under the terms of the Creative Commons license 
+http://www.ee.surrey.ac.uk/Teaching/Unix/
+** Outline
+*** A Brief History of Unix
+*** Getting Set Up
+*** The Unix Filesystem
+*** Basics and Navigation
+*** Working with Files
+*** Redirection and Pipes
+* A Brief History of Unix
+** Multics OS project begins at MIT in 1964, released in 1969
+Hugely ambitious, very influential, but had many problems and was ultimately a failure
+** C programming language released in 1972
+Hugely influential early programming language
+** Initial Unix release one year later, in 1973 designed around C
+Unix was designed around the C programming language as a heavily simplified
+alternative to Multics. Many projects have since branched off of it.
+** 1985-1988 POSIX standard introduced by IEEE
+Because Unix was (and is) a trademark held by AT&T, an open standard for "Unixlike" operating systems
+was introduced.
+** Linux released in 1991, open-source UNIX clone
+Once a small personal project by Finnish software engineer Linus Torvalds,
+Linux is now used on 1.5% of desktop computers and 96.55% of web servers.
+Google's Android and Chrome OS operating systems both run Linux at their core.
+Embedded devices such as DVRs, routers, televisions, game consoles, etc often run Linux.
+Linux is not certified Unix and shares no code, but functions largely the same.
+** Mac OS X released in 2001, first hugely popular desktop Unix
+10th release of Apple's Mac OS was the first to be based on Unix.
+As of version 10.5, it has been officially certified.
+* Getting Set Up
+** Linux and OS X
+Open a terminal
+$ ssh <netid>@zoo.uvm.edu
+** Windows
+Download PuTTY
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+... Or just google "PuTTY"
+Enter zoo.uvm.edu in the hostname field
+Hit "connect"
+* The Unix Filesystem
+** The root directory, /
+| /bin          | System-wide binaries             |
+| /dev          | Device file descriptors          |
+| /etc          | System-wide configuration files  |
+| /home         | User home directories            |
+| /media & /mnt | External device "mount points"   |
+| /opt          | Third-party applications         |
+| /root         | Root user's home directory       |
+| /usr          | "Userspace" applications         |
+| /var          | "Variable" data, logs, databases |
+* Basics and Navigation
+| Command | Description/Purpose      |
+| ls      | LiSt                     |
+| mkdir   | MaKe DIRectory           |
+| cd      | Change working Directory |
+| pwd     | Print Working Directory  |
+* ls - LiSt
+** ls
+*** Home directories
+** $ ls -a
+*** Command line flags
+*** Hidden Files
+*** . and ..
+** $ ls -l
+*** Permissions
+* mkdir - MaKe DIRectory
+** $ mkdir test
+*** Command line arguments
+** $ ls
+** $ ls test
+* cd - Change working Directory
+** $ cd test
+** $ cd ..
+* pwd - Print Working Directory
+** $ pwd
+** $ cd test
+** $ pwd
+** $ cd
+*** cd with no arguments
+** $ pwd
+** $ cd ~
+*** ~ as an alias for home directory
+* Working with Files
+| Command | Description/Purpose           |
+| cp      | CoPy                          |
+| mv      | MoVe                          |
+| rm      | ReMove                        |
+| rmdir   | ReMove DIRectory              |
+| cat     | conCATenate                   |
+| less    | View file                     |
+| head    | view HEAD of file             |
+| tail    | view TAIL of file             |
+| grep    | Filter data by a pattern      |
+| wc      | Word Count                    |
+| chmod   | Change permissions            |
+| nano    | Very simple text editor       |
+| vi      | Much more complex text editor |
+* cp - CoPy
+First, get a copy of science.txt
+** $ cp /users/c/s/cscrew/science.txt .
+Create a backup copy of it
+** $ cp science.txt science.bak
+* mv - MoVe
+** $ mkdir data
+** $ mv science.bak data
+Moving to another directory
+** $ mv data backups
+Renaming files and directories
+* rm - ReMove
+** $ cp science.txt tempfile.txt
+** $ ls
+** $ rm tempfile.txt
+** $ ls
+* rmdir - ReMove DIRectory
+** $ mkdir testdir
+** $ ls
+** $ rmdir testdir
+** $ ls
+** $ rmdir backups
+Can't remove directories unless they are empty
+* cat - conCATenate
+** $ cat science.txt
+* less - View file
+** $ less science.txt
+** Arrow keys or hjkl
+Scroll
+** :q
+Quit
+* head - View HEAD of file
+** $ head science.txt
+* tail - View TAIL of file
+** $ tail science.txt
+* grep - Filter data by a pattern
+** Only ask why it's called grep if you REALLY want to know
+** $ grep science.txt
+* wc - Word Count
+** $ wc science.txt
+* nano
+** $ nano science.txt
+* vi - Much more complex text editor
+** Deserves its own workshop, only mentioning it so you know it exists
+* Redirection and Pipes
+| "Command" | Description/Purpose     |
+| >         | Redirect output to file |
+| >>        | Append output to file   |
+| ¦         |                         |
