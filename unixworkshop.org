@@ -2,11 +2,11 @@
   Resources from the University of Surrey used under the terms of the Creative Commons license.
   http://www.ee.surrey.ac.uk/Teaching/Unix/
 
-  Dillon Beliveau
-  ------------------
-  @dgbeliveau
-  dbelivea@uvm.edu | dillonbeliveau@gmail.com
-  dillonbeliveau.com
+  - Dillon Beliveau
+  - ------------------
+  - @dgbeliveau
+  - dbelivea@uvm.edu | dillonbeliveau@gmail.com
+  - dillonbeliveau.com
 
 ** Outline
 *** A Brief History of Unix
@@ -19,8 +19,7 @@
 ** Multics OS project begins at MIT in 1964, released in 1969
 Hugely ambitious, very influential, but had many problems and was ultimately a failure
 ** C programming language released in 1972
-   Hugely influential early programming languag                        console.log(a);
-e
+   Hugely influential early programming language
 ** Initial Unix release one year later, in 1973 designed around C
 Unix was designed around the C programming language as a heavily simplified
 alternative to Multics. Many projects have since branched off of it.
