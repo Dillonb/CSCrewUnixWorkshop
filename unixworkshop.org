@@ -1,6 +1,13 @@
 * CS CREW UNIX Workshop
-Resources from University of Surrey used under the terms of the Creative Commons license 
-http://www.ee.surrey.ac.uk/Teaching/Unix/
+  Resources from the University of Surrey used under the terms of the Creative Commons license.
+  http://www.ee.surrey.ac.uk/Teaching/Unix/
+
+  Dillon Beliveau
+  ------------------
+  @dgbeliveau
+  dbelivea@uvm.edu | dillonbeliveau@gmail.com
+  dillonbeliveau.com
+
 ** Outline
 *** A Brief History of Unix
 *** Getting Set Up
@@ -12,7 +19,8 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 ** Multics OS project begins at MIT in 1964, released in 1969
 Hugely ambitious, very influential, but had many problems and was ultimately a failure
 ** C programming language released in 1972
-Hugely influential early programming language
+   Hugely influential early programming languag                        console.log(a);
+e
 ** Initial Unix release one year later, in 1973 designed around C
 Unix was designed around the C programming language as a heavily simplified
 alternative to Multics. Many projects have since branched off of it.
@@ -28,16 +36,21 @@ Linux is not certified Unix and shares no code, but functions largely the same.
 ** Mac OS X released in 2001, first hugely popular desktop Unix
 10th release of Apple's Mac OS was the first to be based on Unix.
 As of version 10.5, it has been officially certified.
+* Notation Used In This Presentation
+- Command run in a terminal:
+** $ command
+- Description of a command (command, word(s) it's derived from):
+********* cmd - CoMmanD
 * Getting Set Up
-** Linux and OS X
-Open a terminal
-$ ssh <netid>@zoo.uvm.edu
-** Windows
-Download PuTTY
-http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
-... Or just google "PuTTY"
-Enter zoo.uvm.edu in the hostname field
-Hit "connect"
+  - Linux and OS X
+   Open a terminal
+** $ ssh <netid>@zoo.uvm.edu
+   - Windows
+   Download PuTTY
+   http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+   ... Or just google "PuTTY"
+   Enter zoo.uvm.edu in the hostname field
+   Hit "connect"
 * The Unix Filesystem
 ** The root directory, /
 | /bin          | System-wide binaries             |
@@ -133,9 +146,12 @@ Quit
 ** $ tail science.txt
 * grep - Filter data by a pattern
 ** Only ask why it's called grep if you REALLY want to know
-** $ grep science.txt
+** $ grep science.txt 
 * wc - Word Count
 ** $ wc science.txt
+* man - Manual
+** $ man ls
+*** arrow keys, q
 * nano
 ** $ nano science.txt
 * vi - Much more complex text editor
