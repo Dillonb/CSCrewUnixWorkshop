@@ -4,9 +4,8 @@
 
   - Dillon Beliveau
   - ------------------
-  - @dgbeliveau
-  - dbelivea@uvm.edu | dillonbeliveau@gmail.com
-  - dillonbeliveau.com
+  - dbelivea@uvm.edu
+  - dillonbeliveau@gmail.com
 
 ** Outline
 *** A Brief History of Unix
@@ -137,7 +136,7 @@ Can't remove directories unless they are empty
 ** $ less science.txt
 ** Arrow keys or hjkl
 Scroll
-** :q
+** :q or q
 Quit
 * head - View HEAD of file
 ** $ head science.txt
@@ -145,7 +144,7 @@ Quit
 ** $ tail science.txt
 * grep - Filter data by a pattern
 ** Only ask why it's called grep if you REALLY want to know
-** $ grep science.txt 
+** $ grep [word] science.txt 
 * wc - Word Count
 ** $ wc science.txt
 * man - Manual
